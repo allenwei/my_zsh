@@ -11,7 +11,7 @@ for config_file ($ZSH/lib/*.zsh) source $config_file
 for config_file ($ZSH/custom/*.zsh) source $config_file
 
 # Load all of the plugins that were defined in ~/.zshrc
-plugin=${plugin:=("vi-mode")}
+plugin=${plugin:=()}
 for plugin ($plugins) source $ZSH/plugins/$plugin/$plugin.plugin.zsh
 
 # Check for updates on initial load...
